@@ -1,0 +1,195 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    padding: 5px 10px 12px;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #e5e5e5;
+}
+
+.top-bar {
+    height: 15px;
+    background-color: #91d6d8;
+}
+
+nav {
+    height: 29px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 10px;
+    background-color: #e5e5e5;
+}
+
+.nav-box {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+}
+
+.nav-line {
+    height: 12px;
+    background-color: white;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* HERO */
+
+.hero {
+    height: 136px;
+    background-color: #ffda87;
+    display: flex;
+    align-items: center;
+    padding: 0 12%;
+    gap: 15%;
+}
+
+.hero-image {
+    width: 93px;
+    height: 93px;
+    background-color: #ffca70;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    width: 128px;
+    height: 15px;
+    background-color: #ffb84f;
+    margin-bottom: 11px;
+}
+
+.hero-line {
+    height: 6px;
+    background-color: white;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.hero-short-line {
+    height: 6px;
+    background-color: white;
+    width: 40%;
+}
+
+/* MAIN */
+
+main {
+    background-color: white;
+    padding: 57px 12%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px 13%;
+}
+
+.card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div {
+    width: 50%;
+    height: 50%;
+}
+
+.blue {
+    background-color: #c0ebed;
+    border-top: 14px solid #a4dcde;
+}
+
+.blue div {
+    background-color: #a9dfe2;
+}
+
+.red {
+    background-color: #ff987e;
+    border-top: 14px solid #f47f60;
+}
+
+.red div {
+    background-color: #f47f60;
+}
+
+.yellow {
+    background-color: #ffda87;
+    border-top: 14px solid #ffc66b;
+}
+
+.yellow div {
+    background-color: #ffca70;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #e5e5e5;
+    padding: 13px 12%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.footer-column div {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    margin-bottom: 2px;
+}
+
+.footer-column span {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.footer-column span:last-child {
+    width: 50%;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 500px) {
+    .hero {
+        padding: 0 7%;
+        gap: 8%;
+    }
+
+    main {
+        padding: 40px 7%;
+    }
+
+    .cards {
+        gap: 20px 8%;
+    }
+
+    footer {
+        padding: 13px 7%;
+        gap: 8%;
+    }
+}
